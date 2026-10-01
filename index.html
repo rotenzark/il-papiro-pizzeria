@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Il Papiro — Pizzeria e Ristorante a Precotto, Milano · dieci impasti</title>
 <meta name="description" content="Pizzeria e ristorante in via Fratelli Bressan 11, Precotto, Milano. Dieci impasti diversi — platano, canapa, kamut, carbone vegetale, senza glutine — pizze vegane, forno a legna e cucina di mare. Aperti sette giorni su sette.">
 <link rel="canonical" href="https://rotenzark.github.io/il-papiro-pizzeria/">
@@ -20,9 +21,7 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script type="application/ld+json">
 {
@@ -298,23 +297,23 @@
     <h2 id="voci-titolo" data-i18n="rec.titolo">Novecentoventitré recensioni su Google</h2>
     <ul class="voci__lista">
       <li class="voce">
-        <p>«Pizze vegane deliziose, il personale molto gentile. Tutti i ristoranti e le pizzerie dovrebbero leggere il loro menu di pizze vegane e imparare.»</p>
+        <p lang="it">«Pizze vegane deliziose, il personale molto gentile. Tutti i ristoranti e le pizzerie dovrebbero leggere il loro menu di pizze vegane e imparare.»</p>
         <span class="voce__chi">Federica Oltolina</span>
       </li>
       <li class="voce">
-        <p>«Pizza di Platano SPETTACOLARE!! Finalmente una pizza naturale, leggera, con condimento super saporito. La pizza dei sogni. Grazie»</p>
+        <p lang="it">«Pizza di Platano SPETTACOLARE!! Finalmente una pizza naturale, leggera, con condimento super saporito. La pizza dei sogni. Grazie»</p>
         <span class="voce__chi">Katyusha Colangelo</span>
       </li>
       <li class="voce">
-        <p>«Ottima e sorprendente esperienza in questa pizzeria. Varietà incredibile di impasti, tra cui quello di platano fruttariano che è stato una rivelazione. Vasta scelta di dolci vegani. Ottimo rapporto qualità-prezzo. Lo raccomando.»</p>
+        <p lang="it">«Ottima e sorprendente esperienza in questa pizzeria. Varietà incredibile di impasti, tra cui quello di platano fruttariano che è stato una rivelazione. Vasta scelta di dolci vegani. Ottimo rapporto qualità-prezzo. Lo raccomando.»</p>
         <span class="voce__chi">c v</span>
       </li>
       <li class="voce">
-        <p>«Al Papiro troverete moltissime pizze tra cui scegliere: ottimo l'impasto al platano e ottimi i gusti vegani! Personale molto gentile e disponibile. La consiglio!»</p>
+        <p lang="it">«Al Papiro troverete moltissime pizze tra cui scegliere: ottimo l'impasto al platano e ottimi i gusti vegani! Personale molto gentile e disponibile. La consiglio!»</p>
         <span class="voce__chi">Tea Arrigoni</span>
       </li>
       <li class="voce">
-        <p>«Pizza molto buona e prezzo del menù conveniente (10€)»</p>
+        <p lang="it">«Pizza molto buona e prezzo del menù conveniente (10€)»</p>
         <span class="voce__chi">Daniele Riva</span>
       </li>
     </ul>
@@ -351,7 +350,7 @@
       <figure class="dove__facciata">
         <img src="img/facciata.jpg" width="1600" height="811" decoding="async" alt="La facciata del Papiro in via Fratelli Bressan: tre vetrine con le insegne pizzeria, Il Papiro e ristorante">
       </figure>
-      <iframe title="Mappa di Il Papiro, via Fratelli Bressan 11, Milano" src="https://www.google.com/maps?q=Il+Papiro+Via+Fratelli+Bressan+11+20126+Milano&output=embed" width="600" height="380" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 380px"><template><iframe title="Mappa di Il Papiro, via Fratelli Bressan 11, Milano" src="https://www.google.com/maps?q=Il+Papiro+Via+Fratelli+Bressan+11+20126+Milano&output=embed" width="600" height="380" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/place/Il+Papiro/@45.5103545,9.2221781,17z" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </section>
 
@@ -382,6 +381,7 @@
     </div>
   </div>
   <p class="chiusa__nota" data-i18n="foot.nota">Sito dimostrativo realizzato da Bespoke Studio con dati pubblici della scheda Google e del menù ufficiale. Prezzi e disponibilità degli impasti da confermare in sede.</p>
+  <p class="privacy-link"><a href="privacy.html">Privacy</a></p>
 </footer>
 
 <div class="barra" id="actionBar">
@@ -398,5 +398,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="js/main.js?v=1"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
